@@ -1,7 +1,6 @@
 .introducao-bg {
-    background-color: #000000;
-    color: white;
-    box-shadow: inset 0 -120px white;
+    background: var(--cor-12);
+    box-shadow: inset 0 -120px var(--cor-0);
 }
 
 .introducao {
@@ -19,31 +18,22 @@
     border: 1px solid red;
 }
 
-.introducao-conteudo h1 {
-    margin-bottom: 32px;
-    font-size: 64px;
-    line-height: 1.125;
-    font-family: 'Poppins';
-    font-weight: 600;
-}
-
-.introducao-conteudo span {
-    color: yellow;
-}
-
-.introducao-conteudo p {
-    margin-bottom: 25px;
-    font-size: 24px;
-    line-height: 1.5;
-    color: #b2b2b2;
-    font-family: 'Roboto';
-    font-weight: 400;
-}
-
 .introducao-photo img {
     height: 100%;
     object-fit: cover;
 }
+
+.introducao-conteudo h1 {
+    margin-bottom: 32px;
+}
+
+.introducao-conteudo p {
+    margin-bottom: 25px;
+}
+
+
+
+
 
         /** MEDIA QUERY BEGINS **/
 
@@ -61,8 +51,9 @@
 @media (max-width: 800px) {
 
     .introducao-bg {
-        background-color: #2e2e2e;
-        box-shadow: inset 0 -30px white;
+        background: var(--cor-11);
+        padding-top: 40px;
+        box-shadow: inset 0 -60px #ffffff;
     }
 
     .introducao {
@@ -71,11 +62,10 @@
     }
 
     .introducao-conteudo {
-        padding: 50px 10px ;
+        padding-bottom: 0px;
     }
 
     .introducao h1 {
-        font-size: 32px;
         margin-bottom: 16px;
     }
 
